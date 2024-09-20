@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplos</title>
+    <script>
+        function calculo(params) {
+            let a = parseInt(document.getElementById("dato1").value);
+            let b = parseInt(document.getElementById("dato2").value);
+            let numeros = 0;
+            
+            if (!isNaN(a) && !isNaN(b)) {
+    
+                for (let i = Math.min(a, b); i <= Math.max(a, b); i++) {
+                    if (i % 3 == 0) {
+                        numeros ++;
+                    }
+                }
+
+                document.getElementById("out").innerHTML = `Resultado: <br> La cantidad de multiplos de 3 entre ${a} y ${b} son: <br> ${numeros}`;
+
+            } else {
+            document.getElementById("out").innerHTML = `Existe un error en el tipo de dato ingresado`;
+            }
+        }
+    </script>
+</head>
+<body bgcolor="pink">
+    <p><a href="./index.html">Regresar al Menu</a></p>
+    <h1>Encontrar e imprimir la cantidad de números comprendidos entre dos enteros que son 
+        múltiplos de 3.</h1>
+    <input id="dato1" type="text"><br>
+    <input id="dato2" type="text"><br>
+    <input type="button" value="Encontrar" onclick="calculo()"> <br>
+
+    <p id="out">Resultado: </p>
+</body>
+</html>

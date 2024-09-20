@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de π</title>
+    <script>
+        function calcularPi() {
+            let n = parseInt(document.getElementById("limite").value);
+            let resultado = `Resultado: <br>`;
+            let procedimiento = `Procedimiento: <br>`;
+            let pi = 0;
+            
+            if (!isNaN(n) && 0 < n) {
+                for (let i = 0; i < n; i++) {
+                    let signo = (i % 2 === 0) ? " + " : " - ";
+                    let termino = 4 * Math.pow(-1, i) / (2 * i + 1);
+                    pi += termino;
+
+                    if (i === 0) {
+                        procedimiento += `4/${2 * i + 1}`;
+                    } else {
+                        procedimiento += `${signo}4/${2 * i + 1}`;
+                    }
+                }
+
+                resultado += `π ≈ ${pi} <br>`;
+                document.getElementById("out").innerHTML = procedimiento + "<br><br>" + resultado;
+
+            } else {
+                document.getElementById("out").innerHTML = `Existe un error en el tipo de dato ingresado`;
+            }
+        }
+    </script>
+</head>
+<body bgcolor="lightblue">
+    <p><a href="./index.html">Regresar al Menú</a></p>
+    <h1>Cálculo de π usando la Serie de Leibniz</h1>
+    <label for="limite"> Introduzca el número de términos: </label>
+    <input id="limite" type="text"><br>
+    <input type="button" value="Calcular" onclick="calcularPi()"> <br>
+
+    <p id="out">Resultado: </p>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplos</title>
+    <script>
+        function calculo(params) {
+            let a = parseInt(document.getElementById("dato1").value);
+            let b = parseInt(document.getElementById("dato2").value);
+            let multiplos = "";
+            
+            if (!isNaN(a) && !isNaN(b)) {
+    
+                for (let i = Math.min(a, b); i <= Math.max(a, b); i++) {
+                    if (i % 3 == 0) {
+                        multiplos += `${i} <br>`;
+                    }
+                }
+
+                document.getElementById("out").innerHTML = `Resultado: <br> Los multiplos de 3 entre ${a} y ${b} son: <br> ${multiplos}`;
+
+            } else {
+            document.getElementById("out").innerHTML = `Existe un error en el tipo de dato ingresado`;
+            }
+        }
+    </script>
+</head>
+<body bgcolor="pink">
+    <p><a href="./index.html">Regresar al Menu</a></p>
+    <h1>Numeros multiplos de 3 entre dos Numeros</h1>
+    <input id="dato1" type="text" value="100"><br>
+    <input id="dato2" type="text" value="10"><br>
+    <input type="button" value="Encontrar" onclick="calculo()"> <br>
+
+    <p id="out">Resultado: </p>
+</body>
+</html>

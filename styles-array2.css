@@ -1,0 +1,179 @@
+/* Enlaces */
+a:link, a:visited {
+    color: #ff7f50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff6347;
+    text-decoration: underline;
+}
+
+/* Estilo general del cuerpo */
+body {
+    background-color: #f4f4f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #333333;
+    margin: 0;
+    padding: 20px;
+    font-weight: normal;
+}
+
+/* Tablas */
+table {
+    margin: 30px auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+td {
+    width: 70px;
+    height: 70px;
+    border: 2px solid #6a9fb5;
+    text-align: center;
+    font-size: 22px;
+    background-color: #ffffff;
+    color: #555555;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Celdas que contienen la suma */
+td.sum {
+    background-color: #f7b267;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Efecto hover sobre las celdas */
+td:hover {
+    background-color: #6a9fb5;
+    color: #ffffff;
+}
+
+
+/* Selectores */
+select {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 2px solid #6a9fb5;
+    background-color: #ffffff;
+    color: #333333;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+}
+
+select:hover {
+    border-color: #ff7f50;
+}
+
+/* Resultados */
+#result {
+    margin-top: 25px;
+    font-size: 20px;
+    color: #ff7f50;
+}
+
+/* Títulos */
+h2 {
+    color: #6a9fb5;
+    font-size: 28px;
+}
+
+/* Párrafos */
+p {
+    font-size: 18px;
+    color: #777777;
+}
+
+/* Resultados calculados */
+#resultados {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ff7f50;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedores generales */
+.info-container {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Botones */
+.button {
+    margin: 15px 10px;
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #ff7f50; /* Naranja Coral */
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 30px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.button:hover {
+    background-color: #ff6347; /* Coral más oscuro para hover */
+    transform: translateY(-3px); /* Efecto de elevar el botón */
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2); /* Sombra más profunda */
+}
+
+.button:active {
+    transform: translateY(0); /* Restablecer la posición al hacer clic */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Reducir la sombra al hacer clic */
+}
+
+/* Botones deshabilitados */
+.button:disabled {
+    background-color: #ffc1a1; /* Naranja suave para botones deshabilitados */
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/* Estilo del input de captura */
+input[type="number"] {
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 2px solid #6a9fb5; /* Borde azul suave */
+    background-color: #ffffff;
+    color: #555555;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    width: 250px; /* Ancho personalizado */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Efecto hover */
+input[type="number"]:hover {
+    border-color: #ff7f50; /* Borde naranja coral al hacer hover */
+}
+
+/* Efecto focus (cuando el input está seleccionado) */
+input[type="number"]:focus {
+    border-color: #ff6347; /* Borde coral oscuro al hacer focus */
+    box-shadow: 0 0 8px rgba(255, 99, 71, 0.5); /* Sombra coral suave al hacer focus */
+}
+
+/* Para deshabilitar el input */
+input[type="number"]:disabled {
+    background-color: #f4f4f4;
+    border-color: #cccccc;
+    color: #aaaaaa;
+    cursor: not-allowed;
+}
+

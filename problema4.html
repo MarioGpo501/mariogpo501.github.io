@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci</title>
+    <script>
+        function calculo(params) {
+            let a = parseInt(document.getElementById("limite").value);
+            let resultado = `Resultado: <br>`;
+
+            let x = 0, y = 1, z = 0;
+            
+            if (!isNaN(a) && 0 < a) {
+    
+                for (let i = 0; i < a; i++) {
+                    resultado += `${z} <br>`;
+                    x = y;
+                    y = z;
+                    z = x + y;
+                }
+
+                document.getElementById("out").innerHTML = resultado;
+
+            } else {
+            document.getElementById("out").innerHTML = `Existe un error en el tipo de dato ingresado`;
+            }
+        }
+    </script>
+</head>
+<body bgcolor="pink">
+    <p><a href="./index.html">Regresar al Menu</a></p>
+    <h1>Serie de Fibonacci</h1>
+    <label for="limite"> Introzca el limite de numeros: </label>
+    <input id="limite" type="text"><br>
+    <input type="button" value="Encontrar" onclick="calculo()"> <br>
+
+    <p id="out">Resultado: </p>
+</body>
+</html>

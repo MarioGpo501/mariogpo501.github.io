@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cubos</title>
+    <script>
+        function calculo(params) {
+            
+            let a = parseInt(document.getElementById("num").value);
+            let resultado = `Resultado: <br>`;
+            if (!isNaN(a) && 1 < a) {
+                for (let i = 2; i <= a; i++) {
+                    if(i % 2 == 0) {
+                        resultado += `${i} al cubo es: ${i * i * i} <br>`;
+                    }
+
+                    document.getElementById("out").innerHTML = resultado;
+                }
+            } else {
+                document.getElementById("out").innerHTML = `Existe un error en el tipo de dato ingresado`;
+            }
+        }
+    </script>
+</head>
+<body bgcolor="pink">
+    <p><a href="./index.html">Regresar al Menu</a></p>
+
+    <h1>Programa que muestre en pantalla números naturales 
+        pares elevados al cubo</h1>
+
+        <p>
+            Ejemplo de 5: <br>
+            2 al cubo es 8 <br>
+            4 al cubo es 64 <br> 
+            6 al cubo es .. <br>
+            8 al cubo es ..  <br>
+            10 al cubo es ..
+        </p>
+      
+    <label for="num">Cantidad de numeros naturales pares: </label>
+    <input type="text" id="num"> <br>
+    <input type="button" value="Encontrar" onclick="calculo()"> <br>
+    <p id="out">Resultado: </p>
+</body>
+</html>
