@@ -1,1 +1,209 @@
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.memorama {
+    max-width: 100%;
+}
+
+#tabla {
+    width: 80%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+input[type=button] {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+#tabla td {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #tabla {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for tablets */
+    }
+
+    .imagen {
+        height: 120px; /* Adjust card height for tablets */
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input[type=button] {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    #tabla {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+    }
+
+    .imagen {
+        height: 100px; /* Adjust card height for mobile */
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    input[type=button] {
+        font-size: 14px;
+    }
+}
+
+
+/* Card images */
+.imagen {
+    width: 100%;
+    height: 150px;
+    object-fit: fill;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagen:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Estilos para la sección de inicio */
+.inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; /* Distribuye el logo y el título a los lados */
+    padding: 20px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle un toque más elegante */
+    border-radius: 10px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.titulo {
+    font-size: 28px;
+    color: #333;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .inicio {
+        flex-direction: column; /* En pantallas pequeñas, logo y título se apilan */
+        text-align: center;
+    }
+
+    .logo {
+        max-width: 100px; /* Reducción del tamaño del logo para dispositivos más pequeños */
+        margin-bottom: 10px;
+    }
+
+    .titulo {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 20px; /* Ajuste del tamaño del título para móviles */
+    }
+
+    .logo {
+        max-width: 80px; /* Tamaño más pequeño aún para móviles */
+    }
+}
+
+/* Estilos para la sección de información */
+.informacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+    gap: 10px; /* Espacio entre los elementos */
+    width: 80%;
+    margin: 20px auto;
+    align-items: center; /* Centra verticalmente los items */
+    text-align: center;
+}
+
+/* Alinea el botón para que ocupe toda la fila */
+.informacion input[type=button] {
+    grid-column: span 2; /* El botón ocupará las dos columnas */
+    padding: 10px;
+    font-size: 18px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos generales para los contadores */
+#contador, #intentos {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Cambios en dispositivos móviles */
+@media (max-width: 768px) {
+    .informacion {
+        grid-template-columns: 1fr 1fr; /* En pantallas pequeñas, todo en una columna */
+        gap: 5px;
+    }
+
+    .informacion input[type=button] {
+        font-size: 16px;
+    }
+
+    #contador, #intentos {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .informacion input[type=button] {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #contador, #intentos {
+        font-size: 18px;
+    }
+}
+
 
