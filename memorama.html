@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memorama</title>
+    <link rel="stylesheet" href="./css/estilos-memorama.css">
+    <script src="./js/ofu-memorama.js"></script>
+    
+</head>
+<body onload="Revolver(); Fondo();">
+
+    <section class="inicio"> 
+        <img class="logo" src="./img/logo.png" alt="logo clash royale">
+        <h1 class="titulo"> Memorama de Clash Royale </h1>
+    </section> <br><br>
+    <section class="memorama">
+        <div id="tabla">
+            <img src="./img/0.png" id="0" alt="Clash Royale" class="imagen" onclick="cambiarImagen(this,0)">
+            <img src="./img/0.png" id="1" alt="Clash Royale" class="imagen" onclick="cambiarImagen(this,1)">
+            <img src="./img/0.png" id="2" alt="Clash Royale" class="imagen" onclick="cambiarImagen(this,2)">
+            <img src="./img/0.png" id="3" alt="Clash Royale" class="imagen" onclick="cambiarImagen(this,3)">
+            <img src="./img/0.png" id="4" alt="Clash Royale" class="imagen" onclick="cambiarImagen(this,4)">
+            <img src="./img/0.png" id="5" alt="Clash Royale" class="imagen" onclick="cambiarImagen(this,5)">
+            <img src="./img/0.png" id="6" alt="Clash Royale" class="imagen" onclick="cambiarImagen(this,6)">
+            <img src="./img/0.png" id="7" alt="Clash Royale" class="imagen" onclick="cambiarImagen(this,7)">
+            <img src="./img/0.png" id="8" alt="Clash Royale" class="imagen" onclick="cambiarImagen(this,8)">
+            <img src="./img/0.png" id="9" alt="Clash Royale" class="imagen" onclick="cambiarImagen(this,9)">
+            <img src="./img/0.png" id="10" alt="Clash Royale" class="imagen" onclick="cambiarImagen(this,10)">
+            <img src="./img/0.png" id="11" alt="Clash Royale" class="imagen" onclick="cambiarImagen(this,11)">
+            <img src="./img/0.png" id="12" alt="Clash Royale" class="imagen" onclick="cambiarImagen(this,12)">
+            <img src="./img/0.png" id="13" alt="Clash Royale" class="imagen" onclick="cambiarImagen(this,13)">
+            <img src="./img/0.png" id="14" alt="Clash Royale" class="imagen" onclick="cambiarImagen(this,14)">
+            <img src="./img/0.png" id="15" alt="Clash Royale" class="imagen" onclick="cambiarImagen(this,15)">
+        </div>
+    </section>
+    <section class="informacion">
+        <div id="contador">Pares Encontrados: 0</div>
+        <div id="intentos">Intentos: 0</div>
+        <input type="button" value="Reiniciar" onclick="Reiniciar()">
+    </section>
+    
+    <!-- <p id="salida"> </p> -->
+</body>
+</html>
