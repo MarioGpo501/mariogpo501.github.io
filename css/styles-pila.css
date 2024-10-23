@@ -1,0 +1,121 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff6e5; /* Color de fondo anaranjado suave */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #ff914d; /* Color anaranjado */
+    text-align: center;
+    font-size: 2.5em;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* Input y botones */
+input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid #ff914d;
+    border-radius: 5px;
+}
+
+input[type="button"] {
+    background-color: #ff914d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background-color: #e68a3d; /* Efecto de hover */
+}
+
+/* Mensaje y tabla */
+h3 {
+    text-align: center;
+    color: #ff914d;
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#tabla {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+#tabla td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ff914d;
+    background-color: #ffe0cc;
+}
+
+#tabla td:first-child {
+    color: #ff914d;
+    font-weight: bold;
+}
+
+/* Regresar */
+.regresar-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.regresar {
+    background-color: #ff914d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.regresar:hover {
+    background-color: #e68a3d;
+}
+
+/* Imagen de la pila */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 300px;
+    border-radius: 10px;
+    border: 2px solid #ff914d;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    input[type="text"], input[type="button"] {
+        font-size: 0.9em;
+        padding: 8px 15px;
+        margin-bottom: 1em;
+    }
+
+    #tabla td {
+        padding: 8px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
