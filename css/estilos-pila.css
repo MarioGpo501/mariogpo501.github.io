@@ -1,0 +1,92 @@
+/* Estilo para el cuerpo de la página */
+body {
+    background: linear-gradient(135deg, #1a0033, #0a0033);
+    color: #ffffff;
+    font-family: 'Verdana', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Título principal */
+h1 {
+    font-size: 2.5rem;
+    color: #00ffff;
+    text-shadow: 0px 0px 10px #00ffff;
+}
+
+/* Botones con efecto de neón */
+button {
+    background: rgba(0, 255, 255, 0.1);
+    color: #00ffff;
+    border: 2px solid #00ffff;
+    border-radius: 12px;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 0px 0px 5px #00ffff;
+    transition: all 0.3s ease;
+}
+button:hover {
+    background: #00ffff;
+    color: #000033;
+    box-shadow: 0px 0px 15px #00ffff, 0px 0px 30px #00ffff;
+}
+
+/* Input de texto */
+input[type="text"] {
+    background: rgba(255, 255, 255, 0.1);
+    color: #00ffff;
+    border: 2px solid #00ffff;
+    border-radius: 8px;
+    padding: 10px;
+    width: 300px;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.5);
+}
+
+/* Estilo de la tabla de la pila */
+#pila {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 300px;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #00ffff;
+}
+#pila td {
+    padding: 10px;
+    text-align: center;
+    color: #00ffff;
+    border: 1px solid #00ffff;
+    font-size: 1rem;
+}
+
+/* Estilo para la sección de resultados y pasos */
+h2 {
+    color: #00ffff;
+    text-shadow: 0px 0px 10px #00ffff;
+    font-size: 1.5rem;
+}
+#resultado, #pasos {
+    color: #ffffff;
+    font-size: 1.2rem;
+    background: rgba(0, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* Estilo de los pasos en la lista */
+#pasos li {
+    margin: 5px 0;
+    padding: 5px;
+    background: rgba(0, 255, 255, 0.05);
+    border-radius: 5px;
+}
